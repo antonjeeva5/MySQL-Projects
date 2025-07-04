@@ -12,4 +12,4 @@
         and demonstrate my data retrieval skills by writing a series of analytical queries.
  <details>
   <summary><strong>➡️ View Project Details & Breakdown</strong></summary>
-  ![ERD Diagram]([project_documentation/Student_System_ERD.png](https://github.com/antonjeeva5/MySQL-Projects/blob/main/Student%20Information%20System%20ERD.png)
+  ![ERD Diagram](https://github.com/antonjeeva5/MySQL-Projects/blob/main/Student%20Information%20System%20ERD.png)
