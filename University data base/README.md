@@ -14,7 +14,7 @@
   <summary><strong>➡️ View Project Details & Breakdown</strong></summary>
     <br>
     
-   **ERD Diagram** ![**ERD Diagram**](https://github.com/antonjeeva5/MySQL-Projects/blob/main/Student%20Information%20System%20ERD.png)
+   **ERD Diagram** ![**ERD Diagram**](https://github.com/antonjeeva5/MySQL-Projects/blob/main/University%20data%20base/Student%20Information%20System%20ERD.png)
    ---
 ## 1. Introduction & Project Objective
 
