@@ -35,6 +35,26 @@ This project showcases the ability to:
    Relationships :
      * A student can enroll in multiple courses, and a course can have multiple students (many-to-many, implemented via the Enrollments table).
      * Each course is taught by one instructor (one-to-many from Instructor to Course).
+---
+### 3. Example Queries & Insights
+         Here are some examples of questions this database can answer.
+         
+   **Query 1: Which students are enrolled in 'Introduction to Programming'?**
+
+                  SELECT c.CourseName, COUNT(e.Student_ID) AS NumberOfStudents
+                  FROM Courses c
+                  LEFT JOIN Enrollments e ON c.Course_ID = e.Course_ID
+                  GROUP BY c.CourseName
+                  ORDER BY NumberOfStudents DESC;
+                  
+   ## Other Questions
+   * Which students have not enrolled in any courses?
+   * What is the total number of credits a student is taking this semester?
+       
+
+   
+
+
 
 
    
