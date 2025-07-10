@@ -43,6 +43,16 @@ This project showcases the ability to:
 
 <div align="center">
    
+## Technologies & Tools Used 
+
+</div>
+
+* Database : MySQL
+* Schema Design & ERD : MySQL Workbench & Draw.io
+* SQL Scripting : DDL, DML, DQL
+
+<div align="center">
+   
 ## Relationships 
 
 </div>
