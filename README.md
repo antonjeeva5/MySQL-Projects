@@ -164,7 +164,29 @@ This project showcases the ability to:
             JOIN Accounts ac ON h.account_id = ac.account_id
             JOIN Assets a ON h.asset_id = a.asset_id;
             
-   **Query 2: What assets are held in each account, and in what quantity?**
+   **Query 2: How much has been invested in each asset (gross total)?**
+           SELECT 
+           a.name AS asset_name,
+           SUM(t.quantity * t.price_per_unit + t.fees) AS total_invested
+           FROM Transactions t
+           JOIN Assets a ON t.asset_id = a.asset_id
+           WHERE t.txn_type = 'BUY'
+           GROUP BY a.asset_id, a.name;
+
+   **Query 3: Which accounts have been closed?**   
+            SELECT 
+            account_id, name, opened_date, closed_date
+            FROM Accounts
+            WHERE closed_date IS NOT NULL;
+
+   ## Other Questions
+      * What is the full transaction history for a given account or asset?
+      * What are the realized sales and total proceeds for each asset?
+      * Are there any duplicate holdings for the same asset in the same account?
+
+   </details>
+
+ 
 
 
 
