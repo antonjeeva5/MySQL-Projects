@@ -81,6 +81,8 @@ This project showcases the ability to:
 
  </details>
 
+ ---
+
 ## Project 2: Invenstment Portfolio Database
       This project is a comprehensive relational database for a Personal Investment Portfolio Management System, built from 
       the ground up using MySQL.The goal was to design a normalized and scalable database schema that efficiently tracks 
