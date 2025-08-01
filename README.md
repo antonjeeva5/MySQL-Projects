@@ -188,6 +188,20 @@ This project showcases the ability to:
 
    </details>
 
+   ---
+
+   ## Project 3: Inventory Management Database
+      This project is a comprehensive inventory management system designed using MySQL. The goal was to build a robust, 
+      normalized database from scratch to handle real-world business scenarios, including managing products, suppliers, 
+      customers, and transactions. This portfolio piece showcases my skills in database design, SQL querying, and data analysis.
+<details>
+  <summary><strong>➡️ View Project Details & Breakdown</strong></summary>
+    <br>
+   
+**ERD Diagram** ![**ERD Diagram**]() 
+---
+<div align="center">
+
  
 
 
