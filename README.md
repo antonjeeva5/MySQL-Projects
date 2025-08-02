@@ -194,15 +194,114 @@ This project showcases the ability to:
       This project is a comprehensive inventory management system designed using MySQL. The goal was to build a robust, 
       normalized database from scratch to handle real-world business scenarios, including managing products, suppliers, 
       customers, and transactions. This portfolio piece showcases my skills in database design, SQL querying, and data analysis.
-<details>
+ <details>
   <summary><strong>➡️ View Project Details & Breakdown</strong></summary>
     <br>
+    
+   ## **ERD Diagram**
    
-**ERD Diagram** ![**ERD Diagram**]() 
----
+   ![**ERD Diagram**](https://github.com/antonjeeva5/MySQL-Projects/blob/main/Inventory%20Management%20Database/Inventory%20Management%20ERD.png)
+  ---
+  
 <div align="center">
 
- 
+## Introduction & Project Objective
+
+</div>
+
+This Inventory Management Database project was developed to simulate a real-world, end-to-end relational database 
+system for managing product inventory, supplier relations, customer transactions, and sales reporting. Designed
+using MySQL, the objective of this project is to demonstrate practical skills in database modeling, SQL querying,
+data normalization, and transaction tracking.
+
+The system is built for a hypothetical retail or office supply business that deals with diverse product categories—such as electronics, furniture, peripherals, and office supplies—sourced from multiple suppliers and sold to individual customers. The database structure ensures data consistency, scalability, and efficiency for critical business operations.
+
+🎯 Project Goals
+   - Design a normalized relational database with clear entity relationships and referential integrity using foreign keys.
+
+   - Create a schema to manage products, inventory levels, suppliers, customers, and transaction history.
+
+   - Track both purchases (stock replenishment) and sales (customer transactions) using a flexible transaction model.
+
+   - Enable meaningful data analysis such as:
+
+      - Product performance
+
+      - Supplier contribution
+
+      - Inventory levels and restocking needs
+
+   - Full transaction history for any asset or customer
+
+   - howcase advanced SQL capabilities through joins, aggregations, and conditional queries.
+
+<div align="center">
+   
+## Database Schema & Design (The ERD)
+
+</div>
+
+   - The database schema is built using a normalized relational design to eliminate redundancy and ensure data integrity. The schema consists of 7 core tables:
+
+   - Categories: Defines product groupings such as Electronics or Furniture.
+
+   - Suppliers: Stores supplier contact and business details.
+
+   - Customers: Captures customer identification and communication information.
+
+   - Products: Contains core product information including pricing and category linkage.
+
+   - Product_Suppliers: A many-to-many junction table linking products with multiple suppliers.
+
+   - Inventory: Tracks real-time stock levels of each product.
+
+   - Transactions: Logs both purchases (from suppliers) and sales (to customers), including quantity, price, and date.
+
+Key design features include:
+
+   - Foreign keys to enforce referential integrity.
+
+   - ENUM types for controlled transaction categories (e.g., 'sale', 'purchase').
+
+   - Composite keys (e.g., in Product_Suppliers) to model many-to-many relationships.
+
+   - Timestamps and auto-incrementing IDs for auditability and traceability.
+
+
+<div align="center">
+
+## Database Relationships
+
+</div>
+
+| Table          | Related Table       | Relationship Type                 | Description                                                                 |
+|----------------|---------------------|-----------------------------------|-----------------------------------------------------------------------------|
+| Products       | Categories          | Many-to-One                       | Each product belongs to one category.                                      |
+| Products       | Suppliers           | Many-to-Many (via Product_Suppliers) | Products can have multiple suppliers; suppliers can supply multiple products. |
+| Product_Suppliers | Products, Suppliers | Junction Table                    | Resolves the many-to-many relationship between products and suppliers.     |
+| Inventory      | Products            | One-to-One                        | Each product has exactly one inventory record.                             |
+| Transactions   | Products            | Many-to-One                       | Each transaction involves one product.                                     |
+| Transactions   | Customers           | Many-to-One (nullable)            | A transaction may involve a customer (if it's a sale).                     |
+| Transactions   | Suppliers           | Many-to-One (nullable)            | A transaction may involve a supplier (if it's a purchase).                 |
+
+<div align="center">
+   
+## Technologies & Tools Used 
+</div>
+
+* Database : MySQL
+* Schema Design & ERD : MySQL Workbench & Draw.io
+* SQL Scripting : DDL, DML, DQL
+
+<div align="center">
+   
+## Example Queries & Insights
+
+</div>
+         Here are some examples of questions this database can answer.
+
+
+
 
 
 
